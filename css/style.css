@@ -1,8 +1,29 @@
+#quien_me_gusta, #bebidas, #comidas, #juegos, #soy_bueno, #uni, #scratch, #chess, #Disney, #Gmail, #Google_Meet, #Acordes_de_Guitarra, #Codigo_ASCII, #Colores_HTML, #GitHub, #Markeplace, #Traductor, #Aternos, #Wassap, #Twitch, #Youtube, #Netflix {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bsc, .opc {
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 20px;
+  display: inline-block;
+  place-content: center;
+}
+
+@media (max-width: 850px) {
+  .bsc, .opc {
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 15px;
+    display: inline-block;
+    place-content: center;
+  }
+}
 body {
   background-image: url(../imagenes/GettyImages-605383007-e1519747039171.jpg);
   display: flex;
   background-repeat: no-repeat;
-  display: flex;
 }
 
 .buscar {
@@ -14,30 +35,34 @@ body {
   margin: 20px 0 0 10px;
   height: 80px;
   width: 200px;
-  border: 2px solid black;
-  border-radius: 8px;
-  font-size: 20px;
-  display: inline-block;
-  place-content: center;
   box-shadow: -10px 10px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 850px) {
+  .opc {
+    margin: 20px 0 0 10px;
+    height: 80px;
+    width: 100px;
+    box-shadow: -10px 10px rgba(0, 0, 0, 0.5);
+  }
+}
 .bsc {
   margin: 20px 0 0 15px;
   height: 80px;
   width: 415px;
-  border: 2px solid black;
-  border-radius: 8px;
-  font-size: 20px;
-  display: inline-block;
-  place-content: center;
   box-shadow: -10px 10px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 850px) {
+  .bsc {
+    margin: 20px 0 0 10px;
+    height: 80px;
+    width: 220px;
+    box-shadow: -10px 10px rgba(0, 0, 0, 0.5);
+  }
+}
 #Netflix {
   background-image: url(../imagenes/img_Netflix01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: 60%;
 }
 
@@ -47,8 +72,6 @@ body {
 
 #Youtube {
   background-image: url(../imagenes/img_Youtube01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: 60%;
 }
 
@@ -58,8 +81,6 @@ body {
 
 #Twitch {
   background-image: url(../imagenes/img_Twitch01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: 50%;
 }
 
@@ -81,8 +102,6 @@ body {
 
 #Wassap {
   background-image: url(../imagenes/img_Whatsapp01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: 50%;
 }
 
@@ -92,8 +111,6 @@ body {
 
 #Aternos {
   background-image: url(../imagenes/img_Aternos01.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-x: 50%;
 }
 
@@ -103,8 +120,6 @@ body {
 
 #Traductor {
   background-image: url(../imagenes/img_Traductor01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: 50%;
 }
 
@@ -114,8 +129,6 @@ body {
 
 #Markeplace {
   background-image: url(../imagenes/img_Marketplace01.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: 25%;
 }
 
@@ -137,8 +150,6 @@ body {
 
 #GitHub {
   background-image: url(../imagenes/img_Github01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: 35%;
 }
 
@@ -148,8 +159,6 @@ body {
 
 #Colores_HTML {
   background-image: url(../imagenes/img_Colorhtml01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: 70%;
 }
 
@@ -159,8 +168,6 @@ body {
 
 #Codigo_ASCII {
   background-image: url(../imagenes/img_Codigoascii01.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: 40%;
 }
 
@@ -170,8 +177,6 @@ body {
 
 #Acordes_de_Guitarra {
   background-image: url(../imagenes/img_Acordesguitarra01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #Acordes_de_Guitarra:hover {
@@ -192,7 +197,7 @@ body {
 }
 
 #GoogleTuneado {
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 12px;
   background-image: url(../imagenes/img_Mas01.jpg);
   background-repeat: repeat;
   background-size: 60%;
@@ -205,10 +210,8 @@ body {
 }
 
 #Google_Meet {
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 13px;
   background-image: url(../imagenes/img_Googlemeet01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: 50%;
 }
 
@@ -217,10 +220,8 @@ body {
 }
 
 #Gmail {
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 10px;
   background-image: url(../imagenes/img_Gmail01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: 10%;
 }
 
@@ -229,10 +230,8 @@ body {
 }
 
 #Disney {
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 10px;
   background-image: url(../imagenes/demas1.jpg);
-  background-repeat: repeat;
-  background-size: cover;
   background-position-y: 50%;
 }
 
@@ -241,10 +240,8 @@ body {
 }
 
 #chess {
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 10px;
   background-image: url(../imagenes/demas2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: 50%;
 }
 
@@ -254,8 +251,6 @@ body {
 
 #scratch {
   background-image: url(../imagenes/demas03.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position-y: 50%;
 }
 
@@ -265,8 +260,6 @@ body {
 
 #uni {
   background-image: url(../imagenes/demas4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position-y: 50%;
 }
 
@@ -275,7 +268,7 @@ body {
 }
 
 #soy_yo {
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 10px;
   background-image: url(../imagenes/images00.jpg);
   background-repeat: repeat;
   background-size: 60%;
@@ -288,7 +281,7 @@ body {
 }
 
 #que_me_gusta {
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 10px;
   background-image: url(../imagenes/images02.jpg);
   background-repeat: repeat;
   background-position-y: 50%;
@@ -301,10 +294,8 @@ body {
 }
 
 #soy_bueno {
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 10px;
   background-image: url(../imagenes/images3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #soy_bueno:hover {
@@ -312,10 +303,8 @@ body {
 }
 
 #juegos {
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 10px;
   background-image: url(../imagenes/images07.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: 50%;
 }
 
@@ -324,10 +313,8 @@ body {
 }
 
 #comidas {
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 10px;
   background-image: url(../imagenes/images04.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #comidas:hover {
@@ -335,10 +322,8 @@ body {
 }
 
 #bebidas {
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 10px;
   background-image: url(../imagenes/images05.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: 60%;
 }
 
@@ -347,10 +332,8 @@ body {
 }
 
 #quien_me_gusta {
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 10px;
   background-image: url(../imagenes/images06.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position-y: 10%;
 }
 
@@ -359,19 +342,19 @@ body {
 }
 
 #A {
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 10px;
   background-color: black;
   color: white;
 }
 
 #B {
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 13px;
   background-color: red;
   color: blue;
 }
 
 #C {
-  margin: 20px 0 0 15px;
+  margin: 20px 0 0 13px;
   background-color: green;
   color: blue;
 }/*# sourceMappingURL=style.css.map */

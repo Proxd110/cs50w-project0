@@ -1,0 +1,13 @@
+body {
+  background-image: url(../imagenes/GettyImages-605383007-e1519747039171.jpg);
+}
+
+.accordion-body {
+  background-color: blue;
+  color: black;
+}
+
+.accordion-button {
+  color: green;
+  background-color: black;
+}/*# sourceMappingURL=yo_soy.css.map */

@@ -1,9 +1,50 @@
-
+$N : black;
+$G : green;
+$R : red;
+$B : blue;
+$W : white;
+%similar {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+%opcbsc {
+    border: 2px solid $N;
+    border-radius: 8px;
+    font-size: 20px;
+    display: inline-block;
+    place-content: center;
+}
+@media (max-width: 1280px){
+    /*@media (max-height: 850px) {
+        
+    }*/
+    %opcbsc {
+        border: 2px solid $N;
+        border-radius: 8px;
+        font-size: 15px;
+        display: inline-block;
+        place-content: center;
+    }
+    .opc {
+        margin: 20px 0 0 10px;
+        height: 80px;
+        width: 100px;
+        @extend %opcbsc;
+        box-shadow: -10px 10px rgba(0,0,0,0.5);
+    }
+    .bsc {
+        margin: 20px 0 0 10px;
+        height: 80px;
+        width: 220px;
+        @extend %opcbsc;
+        box-shadow: -10px 10px rgba(0,0,0,0.5);
+    }
+}
 body {
     background-image: url(../imagenes/GettyImages-605383007-e1519747039171.jpg);
     display:flex;
-    background-repeat: no-repeat;
-    display: flex;   
+    background-repeat: repeat;
+    background-size: 500%;
 }
 .buscar {
     display: flex;
@@ -13,28 +54,19 @@ body {
     margin: 20px 0 0 10px;
     height: 80px;
     width: 200px;
-    border: 2px solid black;
-    border-radius: 8px;
-    font-size: 20px;
-    display: inline-block;
-    place-content: center;
+    @extend %opcbsc;
     box-shadow: -10px 10px rgba(0,0,0,0.5);
 }
 .bsc {
     margin: 20px 0 0 15px;
     height: 80px;
     width: 415px;
-    border: 2px solid black;
-    border-radius: 8px;
-    font-size: 20px;
-    display: inline-block;
-    place-content: center;
+    @extend %opcbsc;
     box-shadow: -10px 10px rgba(0,0,0,0.5);
 }
 #Netflix {
     background-image: url(../imagenes/img_Netflix01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-y: 60%;
 }
 #Netflix:hover {
@@ -42,8 +74,7 @@ body {
 }
 #Youtube {
     background-image: url(../imagenes/img_Youtube01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-y: 60%;
 }
 #Youtube:hover {
@@ -51,8 +82,7 @@ body {
 }
 #Twitch {
     background-image: url(../imagenes/img_Twitch01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-y: 50%;
 }
 #Twitch:hover {
@@ -70,8 +100,7 @@ body {
 }
 #Wassap {
     background-image: url(../imagenes/img_Whatsapp01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-y: 50%;
 }
 #Wassap:hover {
@@ -79,8 +108,7 @@ body {
 }
 #Aternos {
     background-image: url(../imagenes/img_Aternos01.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-x: 50%;
 }
 #Aternos:hover {
@@ -88,8 +116,7 @@ body {
 }
 #Traductor {
     background-image: url(../imagenes/img_Traductor01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-y: 50%;
 }
 #Traductor:hover {
@@ -97,8 +124,7 @@ body {
 }
 #Markeplace {
     background-image: url(../imagenes/img_Marketplace01.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-y: 25%;
 }
 #Markeplace:hover {
@@ -116,8 +142,7 @@ body {
 }
 #GitHub {
     background-image: url(../imagenes/img_Github01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-y: 35%;
 }
 #GitHub:hover {
@@ -125,8 +150,7 @@ body {
 }
 #Colores_HTML {
     background-image: url(../imagenes/img_Colorhtml01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-y: 70%;
 }
 #Colores_HTML:hover {
@@ -134,8 +158,7 @@ body {
 }
 #Codigo_ASCII {
     background-image: url(../imagenes/img_Codigoascii01.jpeg );
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-y: 40%;
 }
 #Codigo_ASCII:hover {
@@ -143,8 +166,7 @@ body {
 }
 #Acordes_de_Guitarra {
     background-image: url(../imagenes/img_Acordesguitarra01.jpg );
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
 }
 #Acordes_de_Guitarra:hover {
     background-image: url(../imagenes/img_Acordesguitarra02.jpg);
@@ -161,7 +183,7 @@ body {
     background-image: url(../imagenes/img_Correouni02.png);
 }
 #GoogleTuneado {
-    margin: 20px 0 0 15px;
+    margin: 20px 0 0 12px;
     background-image: url(../imagenes/img_Mas01.jpg);
     background-repeat: repeat;
     background-size: 60%;
@@ -172,20 +194,18 @@ body {
     background-image: url(../imagenes/img_Mas02.jpg);
 }
 #Google_Meet {
-    margin: 20px 0 0 15px;
+    margin: 20px 0 0 13px;
     background-image: url(../imagenes/img_Googlemeet01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-y: 50%;
 }
 #Google_Meet:hover {
     background-image: url(../imagenes/img_Googlemeet02.jpg);
 }
 #Gmail {
-    margin: 20px 0 0 15px;
+    margin: 20px 0 0 10px;
     background-image: url(../imagenes/img_Gmail01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-y: 10%;
 }
 #Gmail:hover {
@@ -193,20 +213,18 @@ body {
 }
 
 #Disney {
-    margin: 20px 0 0 15px;
+    margin: 20px 0 0 10px;
     background-image: url(../imagenes/demas1.jpg);
-    background-repeat: repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-y: 50%;
 }
 #Disney:hover {
     background-image: url(../imagenes/demas01.jpg);
 }
 #chess {
-    margin: 20px 0 0 15px;
+    margin: 20px 0 0 10px;
     background-image: url(../imagenes/demas2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-y: 50%;
 }
 #chess:hover {
@@ -214,8 +232,7 @@ body {
 }
 #scratch {
     background-image: url(../imagenes/demas03.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend %similar;
     background-position-y: 50%;
 }
 #scratch:hover {
@@ -223,15 +240,14 @@ body {
 }
 #uni {
     background-image: url(../imagenes/demas4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend %similar;
     background-position-y: 50%;
 }
 #uni:hover {
     background-image: url(../imagenes/demas04.png);
 }
 #soy_yo {
-    margin: 20px 0 0 15px;
+    margin: 20px 0 0 10px;
     background-image: url(../imagenes/images00.jpg);
     background-repeat: repeat;
     background-size: 60%;
@@ -242,7 +258,7 @@ body {
     background-image: url(../imagenes/images.jpg);
 }
 #que_me_gusta {
-    margin: 20px 0 0 15px;
+    margin: 20px 0 0 10px;
     background-image: url(../imagenes/images02.jpg);
     background-repeat: repeat;
     background-position-y: 50%;
@@ -253,65 +269,60 @@ body {
     background-image: url(../imagenes/images2.png);
 }
 #soy_bueno {
-    margin: 20px 0 0 15px;
+    margin: 20px 0 0 10px;
     background-image: url(../imagenes/images3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
 }
 #soy_bueno:hover {
     background-image: url(../imagenes/images03.jpg);
 }
 #juegos {
-    margin: 20px 0 0 15px;
+    margin: 20px 0 0 10px;
     background-image: url(../imagenes/images07.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-y: 50%;
 }
 #juegos:hover {
     background-image: url(../imagenes/images7.jpg);
 }
 #comidas {
-    margin: 20px 0 0 15px;
+    margin: 20px 0 0 10px;
     background-image: url(../imagenes/images04.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
 }
 #comidas:hover {
     background-image: url(../imagenes/images4.jpg);
 }
 #bebidas {
-    margin: 20px 0 0 15px;
+    margin: 20px 0 0 10px;
     background-image: url(../imagenes/images05.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-y: 60%;
 }
 #bebidas:hover {
     background-image: url(../imagenes/images5.jpg);
 }
 #quien_me_gusta{
-    margin: 20px 0 0 15px;
+    margin: 20px 0 0 10px;
     background-image: url(../imagenes/images06.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %similar;
     background-position-y: 10%;
 }
 #quien_me_gusta:hover {
     background-image: url(../imagenes/images6.png);
 }
 #A {
-    margin: 20px 0 0 15px;
-    background-color: black;
-    color: white;
+    margin: 20px 0 0 10px;
+    background-color: $N;
+    color: $W;
 }
 #B {
-    margin: 20px 0 0 15px;
-    background-color: red;
-    color: blue;
+    margin: 20px 0 0 13px;
+    background-color: $R;
+    color: $B;
 }
 #C {
-    margin: 20px 0 0 15px;
-    background-color: green;
-    color: blue;
+    margin: 20px 0 0 13px;
+    background-color: $G;
+    color: $B;
 }
