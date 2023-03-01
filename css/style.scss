@@ -14,10 +14,8 @@ $W : white;
     display: inline-block;
     place-content: center;
 }
-@media (max-width: 1280px){
-    /*@media (max-height: 850px) {
-        
-    }*/
+/*iPad Pro*/
+@media (max-width: 1024px){
     %opcbsc {
         border: 2px solid $N;
         border-radius: 8px;
@@ -314,7 +312,10 @@ body {
 #A {
     margin: 20px 0 0 10px;
     background-color: $N;
-    color: $W;
+    color:$W;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
 }
 #B {
     margin: 20px 0 0 13px;

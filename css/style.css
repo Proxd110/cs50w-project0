@@ -11,19 +11,37 @@
   place-content: center;
 }
 
-@media (max-width: 850px) {
-  .bsc, .opc {
-    border: 2px solid black;
-    border-radius: 8px;
-    font-size: 15px;
-    display: inline-block;
-    place-content: center;
-  }
-}
+/*@media (max-width: 1280px){
+    @media (max-height: 850px) {
+
+    }
+    %opcbsc {
+        border: 2px solid $N;
+        border-radius: 8px;
+        font-size: 15px;
+        display: inline-block;
+        place-content: center;
+    }
+    .opc {
+        margin: 20px 0 0 10px;
+        height: 80px;
+        width: 100px;
+        @extend %opcbsc;
+        box-shadow: -10px 10px rgba(0,0,0,0.5);
+    }
+    .bsc {
+        margin: 20px 0 0 10px;
+        height: 80px;
+        width: 220px;
+        @extend %opcbsc;
+        box-shadow: -10px 10px rgba(0,0,0,0.5);
+    }
+}*/
 body {
   background-image: url(../imagenes/GettyImages-605383007-e1519747039171.jpg);
   display: flex;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  background-size: 500%;
 }
 
 .buscar {
@@ -38,14 +56,6 @@ body {
   box-shadow: -10px 10px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 850px) {
-  .opc {
-    margin: 20px 0 0 10px;
-    height: 80px;
-    width: 100px;
-    box-shadow: -10px 10px rgba(0, 0, 0, 0.5);
-  }
-}
 .bsc {
   margin: 20px 0 0 15px;
   height: 80px;
@@ -53,14 +63,6 @@ body {
   box-shadow: -10px 10px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 850px) {
-  .bsc {
-    margin: 20px 0 0 10px;
-    height: 80px;
-    width: 220px;
-    box-shadow: -10px 10px rgba(0, 0, 0, 0.5);
-  }
-}
 #Netflix {
   background-image: url(../imagenes/img_Netflix01.jpg);
   background-position-y: 60%;
@@ -345,6 +347,9 @@ body {
   margin: 20px 0 0 10px;
   background-color: black;
   color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 #B {
