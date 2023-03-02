@@ -14,9 +14,32 @@ $W : white;
     display: inline-block;
     place-content: center;
 }
+/*Galaxy S |||*/
+/*@media (max-widt: 361)
+{
+    .bsc, .opc {
+        border: 20px solid $N;
+        border-radius: 80px;
+        font-size: 15px;
+        display: inline-block;
+        place-content: center;
+    }
+    .opc {
+        margin: 20px 0 0 10px;
+        height: 80px;
+        width: 100px;
+        box-shadow: -10px 10px rgba(0,0,0,0.5);
+    }
+    .bsc {
+        margin: 20px 0 0 10px;
+        height: 80px;
+        width: 220px;
+        box-shadow: -10px 10px rgba(0,0,0,0.5);
+    }
+}*/
 /*iPad Pro*/
-@media (max-width: 1024px){
-    %opcbsc {
+/*@media (max-width: 1024px){
+    .bsc, .opc {
         border: 2px solid $N;
         border-radius: 8px;
         font-size: 15px;
@@ -27,17 +50,15 @@ $W : white;
         margin: 20px 0 0 10px;
         height: 80px;
         width: 100px;
-        @extend %opcbsc;
         box-shadow: -10px 10px rgba(0,0,0,0.5);
     }
     .bsc {
         margin: 20px 0 0 10px;
         height: 80px;
         width: 220px;
-        @extend %opcbsc;
         box-shadow: -10px 10px rgba(0,0,0,0.5);
     }
-}
+}*/
 body {
     background-image: url(../imagenes/GettyImages-605383007-e1519747039171.jpg);
     display:flex;
@@ -326,4 +347,26 @@ body {
     margin: 20px 0 0 13px;
     background-color: $G;
     color: $B;
+}
+@media (max-widt: 900)
+{
+    .bsc, .opc {
+        border: 2px solid $N;
+        border-radius: 8px;
+        font-size: 20px;
+        display: inline-block;
+        place-content: center;
+    }
+    .opc {
+        margin: 20px 0 0 10px;
+        height: 80px;
+        width: 200px;
+        box-shadow: -10px 10px rgba(0,0,0,0.5);
+    }
+    .bsc {
+        margin: 20px 0 0 10px;
+        height: 80px;
+        width: 200px;
+        box-shadow: -10px 10px rgba(0,0,0,0.5);
+    }
 }

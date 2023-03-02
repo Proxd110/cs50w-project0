@@ -11,11 +11,32 @@
   place-content: center;
 }
 
-/*@media (max-width: 1280px){
-    @media (max-height: 850px) {
-
+/*Galaxy S |||*/
+/*@media (max-widt: 361)
+{
+    .bsc, .opc {
+        border: 20px solid $N;
+        border-radius: 80px;
+        font-size: 15px;
+        display: inline-block;
+        place-content: center;
     }
-    %opcbsc {
+    .opc {
+        margin: 20px 0 0 10px;
+        height: 80px;
+        width: 100px;
+        box-shadow: -10px 10px rgba(0,0,0,0.5);
+    }
+    .bsc {
+        margin: 20px 0 0 10px;
+        height: 80px;
+        width: 220px;
+        box-shadow: -10px 10px rgba(0,0,0,0.5);
+    }
+}*/
+/*iPad Pro*/
+/*@media (max-width: 1024px){
+    .bsc, .opc {
         border: 2px solid $N;
         border-radius: 8px;
         font-size: 15px;
@@ -26,14 +47,12 @@
         margin: 20px 0 0 10px;
         height: 80px;
         width: 100px;
-        @extend %opcbsc;
         box-shadow: -10px 10px rgba(0,0,0,0.5);
     }
     .bsc {
         margin: 20px 0 0 10px;
         height: 80px;
         width: 220px;
-        @extend %opcbsc;
         box-shadow: -10px 10px rgba(0,0,0,0.5);
     }
 }*/
@@ -362,4 +381,26 @@ body {
   margin: 20px 0 0 13px;
   background-color: green;
   color: blue;
+}
+
+@media (max-widt: 900) {
+  .bsc, .opc {
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 20px;
+    display: inline-block;
+    place-content: center;
+  }
+  .opc {
+    margin: 20px 0 0 10px;
+    height: 80px;
+    width: 200px;
+    box-shadow: -10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .bsc {
+    margin: 20px 0 0 10px;
+    height: 80px;
+    width: 200px;
+    box-shadow: -10px 10px rgba(0, 0, 0, 0.5);
+  }
 }/*# sourceMappingURL=style.css.map */
