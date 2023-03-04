@@ -309,21 +309,21 @@ body {
         border: 2px solid $N;
         border-radius: 8px;
         font-size: 20px;
-        display: flex;
+        display: inline-block;
         place-content: center;
     }
     .opc {
         margin: 20px 0 0 10px;
-        height: 80px;
-        width: 80px;
+        height: 120px;
+        width: 65px;
         box-shadow: -10px 10px rgba(0,0,0,0.5);
     }
     .bsc {
         margin: 20px 0 0 15px;
-        height: 80px;
-        width: 80px;
+        height: 120px;
+        width: 145px;
         box-shadow: -10px 10px rgba(0,0,0,0.5);
-        display: flex;
+        display: inline-block;
     }
 }
 @media (min-width: 200px) {
@@ -331,21 +331,21 @@ body {
         border: 2px solid $N;
         border-radius: 8px;
         font-size: 20px;
-        display: flex;
+        display: inline-block;
         place-content: center;
     }
     .opc {
         margin: 20px 0 0 10px;
-        height: 80px;
-        width: 180px;
+        height: 120px;
+        width: 65px;
         box-shadow: -10px 10px rgba(0,0,0,0.5);
     }
     .bsc {
         margin: 20px 0 0 15px;
-        height: 80px;
-        width: 180px;
+        height: 120px;
+        width: 145px;
         box-shadow: -10px 10px rgba(0,0,0,0.5);
-        display: flex;
+        display: inline-block;
     }
 }
 @media (min-width: 300px) {
@@ -353,21 +353,21 @@ body {
         border: 2px solid $N;
         border-radius: 8px;
         font-size: 20px;
-        display: flex;
+        display: inline-block;
         place-content: center;
     }
     .opc {
         margin: 20px 0 0 10px;
-        height: 80px;
-        width: 280px;
+        height: 100px;
+        width: 65px;
         box-shadow: -10px 10px rgba(0,0,0,0.5);
     }
     .bsc {
         margin: 20px 0 0 15px;
-        height: 80px;
-        width: 280px;
+        height: 100px;
+        width: 145px;
         box-shadow: -10px 10px rgba(0,0,0,0.5);
-        display: flex;
+        display: inline-block;
     }
 }
 @media (min-width: 400px) {
@@ -375,43 +375,21 @@ body {
         border: 2px solid $N;
         border-radius: 8px;
         font-size: 20px;
-        display: flex;
+        display: inline-block;
         place-content: center;
     }
     .opc {
         margin: 20px 0 0 10px;
         height: 80px;
-        width: 375px;
+        width: 65px;
         box-shadow: -10px 10px rgba(0,0,0,0.5);
     }
     .bsc {
         margin: 20px 0 0 15px;
         height: 80px;
-        width: 375px;
+        width: 145px;
         box-shadow: -10px 10px rgba(0,0,0,0.5);
-        display: flex;
-    }
-}
-@media (min-width: 500px) {
-    .bsc, .opc {
-        border: 2px solid $N;
-        border-radius: 8px;
-        font-size: 20px;
-        display: flex;
-        place-content: center;
-    }
-    .opc {
-        margin: 20px 0 0 10px;
-        height: 80px;
-        width: 450px;
-        box-shadow: -10px 10px rgba(0,0,0,0.5);
-    }
-    .bsc {
-        margin: 20px 0 0 15px;
-        height: 80px;
-        width: 450px;
-        box-shadow: -10px 10px rgba(0,0,0,0.5);
-        display: flex;
+        display: inline-block;
     }
 }
 @media (min-width: 550px) {
