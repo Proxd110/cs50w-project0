@@ -3,7 +3,7 @@ $G : green;
 $R : red;
 $B : blue;
 $W : white;
-/*Media a partir de 500 no sirve*/
+
 %similar {
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,6 +35,15 @@ body {
 .bsc {
     @extend %opcbsc;
     width: 437px;
+}
+#GoogleTuneado {
+    background-image: url(../imagenes/img_Mas01.jpg);
+    background-size: 30%;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+#GoogleTuneado:hover {
+    background-image: url(../imagenes/img_Mas02.jpg);
 }
 #Peliculas {
     background-image: url(../imagenes/Peliculas00.png);
@@ -90,29 +99,146 @@ body {
     background-color: $G;
     color: $B;
 }
-/*iPhone XR*//*
-@media (max-width: 414px) {
+@media (min-width: 576px) {
     .bsc, .opc {
         border: 2px solid $N;
         border-radius: 8px;
         font-size: 20px;
         display: inline-block;
         place-content: center;
+        margin: 20px 0 0 10px;
+        height: 200px;
+        box-shadow: -10px 10px rgba(0,0,0,0.5);
     }
     .opc {
-        margin: 20px 0 0 10px;
-        height: 85px;
-        width: 180px;
-        box-shadow: -10px 10px rgba(0,0,0,0.5);
+        width: 170px;
     }
     .bsc {
-        margin: 20px 0 0 15px;
-        height: 85px;
-        width: 370px;
+        width: 177px;
+    }
+    #Peliculas {
+        background-image: url(../imagenes/Peliculas00.png);
+        background-size: cover;
+    }
+    #Musica {
+        background-image: url(../imagenes/Musica00.jpg);
+        background-position-y: 55%;
+        background-position-x: 50%;
+        background-size: cover;
+    }
+    #Musica:hover {
+        background-image: url(../imagenes/Musica.jpg);
+    }
+    #Tienda {
+        background-image: url(../imagenes/img_Marketplace01.png);
+        background-size: cover;
+        background-position-x: 55%;
+    }
+    #Tienda:hover {
+        background-image: url(../imagenes/img_Marketplace02.png);
+    }
+    #Yo {
+        background-image: url(../imagenes/Yo00.jpg);
+        background-size: cover;
+    }
+    #Yo:hover {
+        background-image: url(../imagenes/Yo.jpg);
+    }
+    #GoogleTuneado{
+        background-size: 90%;
+    }
+}
+@media (min-width: 768px) {
+    .bsc, .opc {
+        border: 2px solid $N;
+        border-radius: 8px;
+        font-size: 20px;
+        display: inline-block;
+        place-content: center;
+        margin: 20px 0 0 10px;
+        height: 200px;
         box-shadow: -10px 10px rgba(0,0,0,0.5);
-        display: inline-block;
     }
-    .buscar {
-        display: inline-block;
+    .opc {
+        width: 230px;
     }
-}*/
+    .bsc {
+        width: 237px;
+    }
+    #Musica {
+        background-image: url(../imagenes/Musica00.jpg);
+        background-position-y: 55%;
+        background-position-x: 50%;
+        background-size: 188%;
+    }
+    #Musica:hover {
+        background-image: url(../imagenes/Musica.jpg);
+    }
+    #Tienda {
+        background-image: url(../imagenes/img_Marketplace01.png);
+        background-size: cover;
+        background-position-x: 55%;
+    }
+    #Tienda:hover {
+        background-image: url(../imagenes/img_Marketplace02.png);
+    }
+    #GoogleTuneado{
+        background-size: 80%;
+    }
+}
+@media (min-width: 992px) {
+    .bsc, .opc {
+        border: 2px solid $N;
+        border-radius: 8px;
+        font-size: 20px;
+        display: inline-block;
+        place-content: center;
+        margin: 20px 0 0 10px;
+        height: 200px;
+        box-shadow: -10px 10px rgba(0,0,0,0.5);
+    }
+    .opc {
+        width: 300px;
+    }
+    .bsc {
+        width: 307px;
+    }
+    #Musica {
+        background-image: url(../imagenes/Musica00.jpg);
+        background-position-y: 55%;
+        background-position-x: 50%;
+        background-size: 144%;
+    }
+    #Musica:hover {
+        background-image: url(../imagenes/Musica.jpg);
+    }
+    #Tienda {
+        background-image: url(../imagenes/img_Marketplace01.png);
+        background-size: cover;
+        background-position-x: 55%;
+    }
+    #Tienda:hover {
+        background-image: url(../imagenes/img_Marketplace02.png);
+    }
+    #GoogleTuneado{
+        background-size: 50%;
+    }
+}
+@media (min-width: 1200px) {
+    .bsc, .opc {
+        border: 2px solid $N;
+        border-radius: 8px;
+        font-size: 20px;
+        display: inline-block;
+        place-content: center;
+        margin: 20px 0 0 10px;
+        height: 125px;
+        box-shadow: -10px 10px rgba(0,0,0,0.5);
+    }
+    .opc {
+        width: 430px;
+    }
+    .bsc {
+        width: 437px;
+    }
+}
