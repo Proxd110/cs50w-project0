@@ -86,6 +86,26 @@ body {
   background-image: url(../imagenes/Yo.jpg);
 }
 
+#Juegos {
+  background-image: url(../imagenes/images07.jpg);
+  background-size: cover;
+  background-position-y: 50%;
+}
+
+#Juegos:hover {
+  background-image: url(../imagenes/images7.jpg);
+}
+
+#video01 {
+  background-image: url(../imagenes/Anime.webp);
+  background-size: cover;
+}
+
+#video02 {
+  background-image: url(../imagenes/Anime.webp);
+  background-size: cover;
+}
+
 #A {
   margin: 20px 0 0 10px;
   background-color: black;
